@@ -32,12 +32,11 @@ public class Actual_Submit extends AppCompatActivity {
     public String Final_String =
          Data_Collection_Page_1.GenTeamNum + "," +
          Data_Collection_Page_1.GenAutoCodes + "," +
-         Data_Collection_Page_1.GenReefL1 + "," +
-         Data_Collection_Page_1.GenReefL2 + "," +
-         Data_Collection_Page_1.GenReefL3 + "," +
-         Data_Collection_Page_1.GenReefL4 + "," +
+         Data_Collection_Page_1.GenAutoDepot + "," +
+         Data_Collection_Page_1.GenAutoOutpost + "," +
+         Data_Collection_Page_1.GenAutoNeutral + "," +
          Data_Collection_Page_1.GenAutoLeft + "," +
-         Data_Collection_Page_1.GenAutoGround + "," +
+         Data_Collection_Page_1.GenAutoMiddle + "," +
                  Data_Collection_Page_1.GenAutoRight + "," +
          data_Collection_sandstorm.CoralReefL1 + "," +
          data_Collection_sandstorm.CoralReefL2 + "," +

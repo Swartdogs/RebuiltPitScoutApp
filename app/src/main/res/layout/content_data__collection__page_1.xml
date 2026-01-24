@@ -8,6 +8,47 @@
     tools:context=".Data_Collection_Page_1">
 
 
+    <Button
+        android:id="@+id/genStartLeft_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="LEFT"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <Button
+        android:id="@+id/genStartMiddle_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="MIDDLe"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <Button
+        android:id="@+id/genStartRight_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="RIGHT"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
     <TextView
         android:id="@+id/genQuestions_TV"
         android:layout_width="wrap_content"
@@ -37,87 +78,35 @@
 
 
     <TextView
-        android:id="@+id/genPlace_TV"
+        android:id="@+id/genStart_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
         android:foregroundGravity="center_horizontal"
-        android:text="Where can you place coral in Auto?"
+        android:text="Where do you start in Auto?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="41sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.296" />
 
     <ImageView
         android:id="@+id/genReefImage_IV"
-        android:layout_width="wrap_content"
-        android:layout_height="421dp"
+        android:layout_width="719dp"
+        android:layout_height="188dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.43"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488"
+        app:layout_constraintVertical_bias="0.547"
         app:srcCompat="@drawable/reef_removebg_preview__1_" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL2_CB"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:text="L2"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.541" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL4_CB"
-        android:layout_width="119dp"
-        android:layout_height="71dp"
-        android:text="L4"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.377" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL1_CB"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:text="L1"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.624" />
-
-    <CheckBox
-        android:id="@+id/genAutoPlaceL3_CB"
-        android:layout_width="119dp"
-        android:layout_height="66dp"
-        android:text="L3"
-        android:textSize="44sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.665"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.457" />
 
     <TextView
         android:id="@+id/genAutoPickup_TV"
@@ -126,43 +115,17 @@
         android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif"
         android:foregroundGravity="center_horizontal"
-        android:text="Can you pick up coral in Auto? If so, where?"
+        android:text="Can you pick up fuel in Auto? If so, where?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.75" />
-
-    <CheckBox
-        android:id="@+id/genPickupRight_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Right Station"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
-
-    <CheckBox
-        android:id="@+id/genPickupLeft_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Left Station"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.053"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.71" />
 
     <Button
         android:id="@+id/genNextPage_B"
@@ -285,17 +248,43 @@
         app:layout_constraintVertical_bias="0.184" />
 
     <CheckBox
-        android:id="@+id/genPickupGround_CB"
+        android:id="@+id/genPickupOutpost_CB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ground"
+        android:text="Outpost"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.404"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.802" />
+
+    <CheckBox
+        android:id="@+id/genPickupDepot_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Depot"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <CheckBox
+        android:id="@+id/genPickupNeutral_CB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neutral Zone"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
 
 
 </android.support.constraint.ConstraintLayout>

@@ -23,12 +23,11 @@ public class Start_Page extends AppCompatActivity {
             public void onClick(View v) {
                 Data_Collection_Page_1.GenTeamNum = 0;
                 Data_Collection_Page_1.GenAutoCodes = 0;
-                        Data_Collection_Page_1.GenReefL1 = "False";
-                        Data_Collection_Page_1.GenReefL2 = "False";
-                        Data_Collection_Page_1.GenReefL3 = "False";
-                        Data_Collection_Page_1.GenReefL4 = "False";
+                        Data_Collection_Page_1.GenAutoDepot = "False";
+                        Data_Collection_Page_1.GenAutoOutpost = "False";
+                        Data_Collection_Page_1.GenAutoNeutral = "False";
                         Data_Collection_Page_1.GenAutoRight = "False";
-                        Data_Collection_Page_1.GenAutoGround = "False";
+                        Data_Collection_Page_1.GenAutoMiddle = "False";
                         Data_Collection_Page_1.GenAutoLeft = "False";
                         data_Collection_sandstorm.CoralReefL1 = "False";
                         data_Collection_sandstorm.CoralReefL2 = "False";
