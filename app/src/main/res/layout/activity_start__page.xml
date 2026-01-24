@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5A5A5"
+    tools:context=".Start_Page">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="535dp"
+        android:layout_height="221dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="WELCOME TO 525 REEFSCAPE SCOUTING"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/Start_Collection_Open_B"
+        android:layout_width="418dp"
+        android:layout_height="118dp"
+        android:backgroundTint="@color/colorAccent"
+        android:fontFamily="@font/bolt_regular"
+        android:text="Start Collection"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.829" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="700dp"
+        android:layout_height="600dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/swartdogs525logo" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="639dp"
+        android:layout_height="130dp"
+        android:fontFamily="@font/bolt_regular"
+        android:gravity="center"
+        android:text="PIT SCOUTING"
+        android:textColor="#000000"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+</android.support.constraint.ConstraintLayout>

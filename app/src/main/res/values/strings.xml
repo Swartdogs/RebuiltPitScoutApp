@@ -1,0 +1,36 @@
+<resources>
+    <string name="robot_name">Blue 3 Robot</string>
+    <string name="robot_color">#ff4444</string>
+
+
+
+    <string name="app_name">525 Pit App</string>
+    <string name="title_activity_data__collection__page_1">Data_Collection_Page_1</string>
+    <string name="to_begin_data_collection_enter_team_match_number_and_click_start">Please Enter Team Number, Match Number and your Initials to Begin</string>
+    <string name="match_number">Match Number:</string>
+    <string name="cancel">Cancel</string>
+    <string name="team">Team #</string>
+    <string name="match">Match #</string>
+    <string name="comment">Comment</string>
+    <string name="team_number">Team Number:</string>
+    <string name="title_activity_instructions__page">Instructions_Page</string>
+    <string name="title_activity_data__collection_sandstorm">data_collection_autonomous</string>
+    <string name="autonomous">Autonomous</string>
+    <string name="level_1">Level 1:</string>
+    <string name="level_2">Level 2:</string>
+    <string name="middle">Middle</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+    <string name="scoring_element_placement">Scoring Element Placement:</string>
+    <string name="cargo">Cargo:</string>
+    <string name="hatch_panel">Hatch Panel:</string>
+    <string name="rocket">Rocket</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="cargoship">Cargoship</string>
+    <string name="title_activity_data_collection__tele_op">data_collection_TeleOP</string>
+    <string name="title_activity_data_collection_end_game">data_collection_end_game</string>
+    <string name="title_activity_save__page">Save_Page</string>
+    <string name="title_activity_delete__data">Delete_Data</string>
+    <string name="title_activity_actual__submit">Actual_Submit</string>
+    <string name="title_activity_delete__page">Delete_Page</string>
+</resources>

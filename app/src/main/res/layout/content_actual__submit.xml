@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5A5A5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Actual_Submit"
+    tools:showIn="@layout/activity_actual__submit">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="726dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="Please Click Below!!!"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="100sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Press_Here_B"
+        android:layout_width="589dp"
+        android:layout_height="360dp"
+        android:layout_marginTop="562dp"
+        android:background="#FF6E00"
+        android:fontFamily="@font/bolt_regular"
+        android:onClick="Press_Here"
+        android:text="Press Here"
+        android:textSize="85sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.689" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="469dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477"
+        app:srcCompat="@drawable/screenshot_2025_01_29_183643_removebg_preview" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A5A5A5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".data_collection_end_game"
+    tools:showIn="@layout/activity_data_collection_end_game"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+
+
+    <TextView
+        android:id="@+id/Other_TV"
+        android:layout_width="266dp"
+        android:layout_height="60dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="OTHER"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="55sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/end_HumanPlayerPreference_TB"
+        android:layout_width="674dp"
+        android:layout_height="108dp"
+        android:fontFamily="sans-serif"
+        android:text="Do you have a preference on where your human player is?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="726dp"
+        android:layout_height="98dp"
+        android:orientation='horizontal'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.487">
+
+        <RadioButton
+            android:id="@+id/endHumanPlayerStation_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Coral"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/endHumanPlayerProcessor_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Processor"
+            android:textSize="45sp"
+            android:typeface="normal" />
+
+        <RadioButton
+            android:id="@+id/endHumanPlayerNone_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="No Preference"
+            android:textSize="45sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/end_driveBase_TB"
+        android:layout_width="674dp"
+        android:layout_height="109dp"
+        android:fontFamily="sans-serif"
+        android:text="What type of Drive Base do you use?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.146" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="747dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.603"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.715">
+
+        <RadioButton
+            android:id="@+id/endPreferenceAlgae_RB"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:text="Algae"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/endPreferenceCoral_RB"
+            android:layout_width="227dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Coral"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/endPreferenceNo_RB"
+            android:layout_width="339dp"
+            android:layout_height="81dp"
+            android:text="No Preference"
+            android:textSize="45sp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/otherAlgaeSpecialist_TV"
+        android:layout_width="757dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Do you focus on scoring Algae or Coral?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.621" />
+
+    <Button
+        android:id="@+id/To_Submission_B"
+        android:layout_width="591dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="To Submission"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <RadioGroup
+        android:layout_width="578dp"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.271">
+
+        <RadioButton
+            android:id="@+id/end_Swerve_RB"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:text="Swerve"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/end_Tank_RB"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Tank"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/end_OtherBase_RB"
+            android:layout_width="174dp"
+            android:layout_height="match_parent"
+            android:text="Other:"
+            android:textSize="45sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/end_otherText_TB"
+        android:layout_width="203dp"
+        android:layout_height="79dp"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.268" />
+
+
+</android.support.constraint.ConstraintLayout>
