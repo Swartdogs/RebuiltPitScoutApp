@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/other_TrenchQuestion_TB"
         android:layout_width="674dp"
-        android:layout_height="108dp"
+        android:layout_height="98dp"
         android:fontFamily="sans-serif"
         android:text="Can you fit under the trenches?"
         android:textAlignment="center"
@@ -45,19 +45,19 @@
 
     <RadioGroup
         android:id="@+id/radioGroup3"
-        android:layout_width="726dp"
+        android:layout_width="600dp"
         android:layout_height="98dp"
         android:orientation='horizontal'
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.487">
+        app:layout_constraintVertical_bias="0.483">
 
         <RadioButton
             android:id="@+id/other_TrenchQuestionYes_RB"
-            android:layout_width="wrap_content"
+            android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Yes"
@@ -76,7 +76,7 @@
 
     <TextView
         android:id="@+id/end_driveBase_TB"
-        android:layout_width="674dp"
+        android:layout_width="600dp"
         android:layout_height="109dp"
         android:fontFamily="sans-serif"
         android:text="What type of Drive Base do you use?"
@@ -90,37 +90,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.146" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup"
-        android:layout_width="747dp"
-        android:layout_height="80dp"
-        android:orientation="horizontal"
-        android:requiresFadingEdge="vertical"
-        android:scrollbarAlwaysDrawVerticalTrack="true"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.603"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.715">
-
-        <RadioButton
-            android:id="@+id/other_BumpQuestionYes_RB"
-            android:layout_width="208dp"
-            android:layout_height="match_parent"
-            android:text="Yes"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/other_BumpQuestionNo_RB"
-            android:layout_width="227dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="No"
-            android:textSize="45sp" />
-
-    </RadioGroup>
-
     <TextView
         android:id="@+id/other_BumpQuestion_TB"
         android:layout_width="757dp"
@@ -133,10 +102,41 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
+        app:layout_constraintVertical_bias="0.581" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="600dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:requiresFadingEdge="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685">
+
+        <RadioButton
+            android:id="@+id/other_BumpQuestionYes_RB"
+            android:layout_width="266dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="45sp" />
+
+        <RadioButton
+            android:id="@+id/other_BumpQuestionNo_RB"
+            android:layout_width="215dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="No"
+            android:textSize="45sp" />
+
+    </RadioGroup>
 
     <Button
         android:id="@+id/To_Submission_B"

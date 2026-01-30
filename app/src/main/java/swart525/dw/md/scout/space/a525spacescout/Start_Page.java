@@ -29,19 +29,17 @@ public class Start_Page extends AppCompatActivity {
                         Data_Collection_Page_1.GenAutoRight = "False";
                         Data_Collection_Page_1.GenAutoMiddle = "False";
                         Data_Collection_Page_1.GenAutoLeft = "False";
-                        data_collection_TeleOP.shallow = "False";
-                        data_collection_TeleOP.deep = "False";
-                        data_collection_TeleOP.NoFit = "False";
-                        data_collection_end_game.EndPlayerProcessor = "False";
-                        data_collection_end_game.EndPlayerStation = "False";
-                        data_collection_end_game.EndPlayerNone = "False";
+                        data_collection_TeleOP.Level1 = "False";
+                        data_collection_TeleOP.Level2 = "False";
+                        data_collection_TeleOP.Level3 = "False";
+                        data_collection_end_game.EndTrenchYes = "False";
+                        data_collection_end_game.EndTrenchNo = "False";
+                        data_collection_end_game.EndBumpYes = "False";
+                        data_collection_end_game.EndBumpNo = "False";
                         data_collection_end_game.EndSwerve = "False";
                         data_collection_end_game.EndTank = "False";
                         data_collection_end_game.EndOther = "False";
                         data_collection_end_game.EndOtherText = "NA";
-                        data_collection_end_game.EndPreferenceAlgae = "False";
-                        data_collection_end_game.EndPreferenceCoral = "False";
-                        data_collection_end_game.EndPreferenceNo = "False";
 
 
 

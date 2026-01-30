@@ -11,16 +11,14 @@ import android.widget.Toast;
 public class data_collection_end_game extends AppCompatActivity {
 
     //Defines needed variables
-    public static String EndPlayerProcessor = "False";
-    public static String EndPlayerStation = "False";
-    public static String EndPlayerNone = "False";
     public static String EndSwerve = "False";
     public static String EndTank = "False";
     public static String EndOther = "False";
     public static String EndOtherText = "NA";
-    public static String EndPreferenceAlgae = "False";
-    public static String EndPreferenceCoral = "False";
-    public static String EndPreferenceNo = "False";
+    public static String EndTrenchYes = "False";
+    public static String EndTrenchNo = "False";
+    public static String EndBumpYes = "False";
+    public static String EndBumpNo = "False";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +33,10 @@ public class data_collection_end_game extends AppCompatActivity {
         final EditText EndOtherTextTXT = (EditText) findViewById(R.id.end_otherText_TB);
 
 
-        final RadioButton EndPlayerProcessorRB = (RadioButton) findViewById(R.id.other_TrenchQuestionNo_RB);
-        final RadioButton EndPlayerStationRB = (RadioButton) findViewById(R.id.other_TrenchQuestionYes_RB);
-        final RadioButton EndPreferenceAlgaeRB = (RadioButton) findViewById(R.id.other_BumpQuestionYes_RB);
-        final RadioButton EndPreferenceCoralRB = (RadioButton) findViewById(R.id.other_BumpQuestionNo_RB);
+        final RadioButton EndTrenchNoRB = (RadioButton) findViewById(R.id.other_TrenchQuestionNo_RB);
+        final RadioButton EndTrenchYesRB = (RadioButton) findViewById(R.id.other_TrenchQuestionYes_RB);
+        final RadioButton EndBumpYesRB = (RadioButton) findViewById(R.id.other_BumpQuestionYes_RB);
+        final RadioButton EndBumpNoRB = (RadioButton) findViewById(R.id.other_BumpQuestionNo_RB);
 
 
         Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
@@ -51,17 +49,17 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (EndTankRB.isChecked()) {
                     EndTank = "True";
                 }
-                if (EndPlayerProcessorRB.isChecked()) {
-                    EndPlayerProcessor = "True";
+                if (EndTrenchYesRB.isChecked()) {
+                    EndTrenchYes = "True";
                 }
-                if (EndPlayerStationRB.isChecked()) {
-                    EndPlayerStation = "True";
+                if (EndTrenchNoRB.isChecked()) {
+                    EndTrenchNo = "True";
                 }
-                if (EndPreferenceAlgaeRB.isChecked()){
-                    EndPreferenceAlgae = "True";
+                if (EndBumpYesRB.isChecked()){
+                    EndBumpYes = "True";
                 }
-                if (EndPreferenceCoralRB.isChecked()){
-                    EndPreferenceCoral = "True";
+                if (EndBumpNoRB.isChecked()){
+                    EndBumpNo = "True";
                 }
                 if (EndOtherRB.isChecked()) {
                     EndOther = "True";

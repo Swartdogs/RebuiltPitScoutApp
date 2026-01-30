@@ -41,19 +41,17 @@ public class Actual_Submit extends AppCompatActivity {
                  data_Collection_sandstorm.TeleopDepot + "," +
                  data_Collection_sandstorm.TeleopOutpost + ',' +
                  data_Collection_sandstorm.TeleopNeutralZone + ',' +
-         data_collection_TeleOP.shallow + "," +
-         data_collection_TeleOP.deep + "," +
-         data_collection_TeleOP.YesFit + "," +
-         data_collection_TeleOP.NoFit + "," +
-         data_collection_end_game.EndPlayerProcessor + "," +
-         data_collection_end_game.EndPlayerStation + "," +
-         data_collection_end_game.EndPlayerNone + "," +
+         data_collection_TeleOP.Level1 + "," +
+         data_collection_TeleOP.Level2 + "," +
+         data_collection_TeleOP.Level3 + "," +
+         data_collection_end_game.EndTrenchYes + "," +
+                 data_collection_end_game.EndTrenchNo + "," +
+                 data_collection_end_game.EndBumpYes + "," +
+         data_collection_end_game.EndBumpNo + "," +
          data_collection_end_game.EndSwerve + "," +
          data_collection_end_game.EndTank + "," +
-                 data_collection_end_game.EndOtherText + "," +
-         data_collection_end_game.EndPreferenceAlgae + "," +
-         data_collection_end_game.EndPreferenceCoral + "," +
-         data_collection_end_game.EndPreferenceNo;
+                 data_collection_end_game.EndOther + "," +
+                 data_collection_end_game.EndOtherText;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);

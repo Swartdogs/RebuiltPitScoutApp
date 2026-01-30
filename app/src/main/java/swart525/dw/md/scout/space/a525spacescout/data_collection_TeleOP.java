@@ -11,8 +11,8 @@ import android.widget.RadioButton;
 public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
-    public static String shallow = "False";
-    public static String deep = "False";
+    public static String Level3 = "False";
+    public static String Level2 = "False";
     public static String YesFit = "False";
     public static String NoFit = "False";
 
@@ -27,11 +27,11 @@ public class data_collection_TeleOP extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection__tele_op);
 
         //Defines all Buttons;
-        final Button shallowB = (Button) findViewById(R.id.EndL3_B);
-        shallowB.setTag("D7D7D7D5");
+        final Button levelL3B = (Button) findViewById(R.id.EndL3_B);
+        levelL3B.setTag("D7D7D7D5");
 
-        final Button deepB = (Button) findViewById(R.id.EndL2_B);
-        deepB.setTag("D7D7D7D5");
+        final Button levelL2B = (Button) findViewById(R.id.EndL2_B);
+        levelL2B.setTag("D7D7D7D5");
 
         final Button levelL1B = (Button) findViewById(R.id.EndL1_B);
         levelL1B.setTag("D7D7D7D5");
@@ -41,39 +41,39 @@ public class data_collection_TeleOP extends AppCompatActivity {
 
         //Changes color of buttons and sets variable to true if clicked
         //Resets to default if clicked again
-        shallowB.setOnClickListener(new View.OnClickListener() {
+        levelL3B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) shallowB.getTag();
+                String colorCode = (String) levelL3B.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    shallowB.setBackgroundColor(ContextCompat.getColor(shallowB.getContext(), R.color.colorPrimary));
-                    shallowB.setTag("#FFE600");
-                    shallow = "true";
+                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.colorPrimary));
+                    levelL3B.setTag("#FFE600");
+                    Level3 = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    shallowB.setBackgroundColor(ContextCompat.getColor(shallowB.getContext(), R.color.grey_button));
-                    shallowB.setTag("D7D7D7D5");
-                    shallow = "false";
+                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.grey_button));
+                    levelL3B.setTag("D7D7D7D5");
+                    Level3 = "false";
                 }
 
 
             }
 
         });
-        deepB.setOnClickListener(new View.OnClickListener() {
+        levelL2B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) deepB.getTag();
+                String colorCode = (String) levelL2B.getTag();
                 if (!"#FFE600".equals(colorCode)) {
-                    deepB.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.colorPrimary));
-                    deepB.setTag("#FFE600");
-                    deep = "true";
+                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.colorPrimary));
+                    levelL2B.setTag("#FFE600");
+                    Level2 = "true";
 
 
                 } else if ("#FFE600".equals(colorCode)) {
-                    deepB.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.grey_button));
-                    deepB.setTag("D7D7D7D5");
-                    deep = "false";
+                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.grey_button));
+                    levelL2B.setTag("D7D7D7D5");
+                    Level2 = "false";
                 }
 
             }
@@ -81,13 +81,13 @@ public class data_collection_TeleOP extends AppCompatActivity {
         levelL1B.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String colorCode = (String) deepB.getTag();
+                    String colorCode = (String) levelL1B.getTag();
                     if (!"#FFE600".equals(colorCode)) {
-                        levelL1B.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.colorPrimary));
+                        levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.colorPrimary));
                         levelL1B.setTag("#FFE600");
                         Level1 = "true";
                     } else if ("#FFE600".equals(colorCode)) {
-                        levelL1B.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.grey_button));
+                        levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.grey_button));
                         levelL1B.setTag("D7D7D7D5");
                         Level1 = "false";
                     }
