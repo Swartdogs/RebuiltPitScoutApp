@@ -9,19 +9,8 @@
     tools:context=".data_collection_TeleOP"
     tools:showIn="@layout/activity_data_collection__tele_op">
 
-    <Button
-        android:id="@+id/endHangShallow_B"
-        android:layout_width="211dp"
-        android:layout_height="76dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="shallow"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.398"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.475" />
+
+
 
     <TextView
         android:id="@+id/endHangLocation_TB"
@@ -53,19 +42,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="325dp"
-        android:layout_height="566dp"
-        android:rotation="-360"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.341"
-        app:srcCompat="@drawable/screenshot_2025_01_22_at_7_24_42_pm_removebg_preview" />
 
     <Button
         android:id="@+id/To_Engame_B"
@@ -102,64 +78,57 @@
         app:barrierDirection="top"
         tools:layout_editor_absoluteY="1280dp" />
 
-    <TextView
-        android:id="@+id/CanYouFit_TV"
-        android:layout_width="727dp"
-        android:layout_height="102dp"
-        android:text="Can you fit under Shallow cages?"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="45sp"
-        android:textStyle="bold"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.251"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.767" />
-
-    <RadioGroup
-        android:id="@+id/CageFit_RG"
-        android:layout_width="656dp"
-        android:layout_height="76dp"
-        android:orientation='horizontal'
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841">
-
-        <RadioButton
-            android:id="@+id/fitYes_RB"
-            android:layout_width="327dp"
-            android:layout_height="wrap_content"
-            android:text="Yes"
-            android:textAlignment="textStart"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/fitNo_RB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="No"
-            android:textAlignment="textStart"
-            android:textSize="45sp" />
-    </RadioGroup>
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/screenshotpng_removebg_preview" />
 
     <Button
-        android:id="@+id/endHangDeep_B"
+        android:id="@+id/EndL1_B"
         android:layout_width="211dp"
         android:layout_height="76dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="deep"
+        android:text="L1"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677" />
+        app:layout_constraintVertical_bias="0.41" />
+
+    <Button
+        android:id="@+id/EndL2_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="L2"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
+    <Button
+        android:id="@+id/EndL3_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="L3"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
 
 </android.support.constraint.ConstraintLayout>

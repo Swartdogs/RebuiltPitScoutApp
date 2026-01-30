@@ -4,10 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class data_collection_end_game extends AppCompatActivity {
@@ -37,12 +35,10 @@ public class data_collection_end_game extends AppCompatActivity {
         final EditText EndOtherTextTXT = (EditText) findViewById(R.id.end_otherText_TB);
 
 
-        final RadioButton EndPlayerProcessorRB = (RadioButton) findViewById(R.id.endHumanPlayerProcessor_RB);
-        final RadioButton EndPlayerStationRB = (RadioButton) findViewById(R.id.endHumanPlayerStation_RB);
-        final RadioButton EndPlayerNoneRB = (RadioButton) findViewById(R.id.endHumanPlayerNone_RB);
-        final RadioButton EndPreferenceAlgaeRB = (RadioButton) findViewById(R.id.endPreferenceAlgae_RB);
-        final RadioButton EndPreferenceCoralRB = (RadioButton) findViewById(R.id.endPreferenceCoral_RB);
-        final RadioButton EndPreferenceNoRB = (RadioButton) findViewById(R.id.endPreferenceNo_RB);
+        final RadioButton EndPlayerProcessorRB = (RadioButton) findViewById(R.id.other_TrenchQuestionNo_RB);
+        final RadioButton EndPlayerStationRB = (RadioButton) findViewById(R.id.other_TrenchQuestionYes_RB);
+        final RadioButton EndPreferenceAlgaeRB = (RadioButton) findViewById(R.id.other_BumpQuestionYes_RB);
+        final RadioButton EndPreferenceCoralRB = (RadioButton) findViewById(R.id.other_BumpQuestionNo_RB);
 
 
         Button To_Submission = (Button) findViewById(R.id.To_Submission_B); //Defines button for later use
@@ -61,17 +57,11 @@ public class data_collection_end_game extends AppCompatActivity {
                 if (EndPlayerStationRB.isChecked()) {
                     EndPlayerStation = "True";
                 }
-                if (EndPlayerNoneRB.isChecked()) {
-                    EndPlayerNone = "True";
-                }
                 if (EndPreferenceAlgaeRB.isChecked()){
                     EndPreferenceAlgae = "True";
                 }
                 if (EndPreferenceCoralRB.isChecked()){
                     EndPreferenceCoral = "True";
-                }
-                if (EndPreferenceNoRB.isChecked()){
-                    EndPreferenceNo = "True";
                 }
                 if (EndOtherRB.isChecked()) {
                     EndOther = "True";

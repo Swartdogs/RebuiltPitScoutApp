@@ -98,15 +98,14 @@
 
     <ImageView
         android:id="@+id/genReefImage_IV"
-        android:layout_width="719dp"
-        android:layout_height="188dp"
+        android:layout_width="1160dp"
+        android:layout_height="443dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547"
-        app:srcCompat="@drawable/reef_removebg_preview__1_" />
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/untitled_presentation_removebg_preview" />
 
     <TextView
         android:id="@+id/genAutoPickup_TV"
@@ -226,10 +225,10 @@
         android:foregroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256" />
+        app:layout_constraintVertical_bias="0.072" />
 
     <EditText
         android:id="@+id/genAutoCodes_TXT"

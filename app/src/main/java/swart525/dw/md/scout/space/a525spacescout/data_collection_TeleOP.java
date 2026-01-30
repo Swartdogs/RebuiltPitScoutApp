@@ -16,6 +16,8 @@ public class data_collection_TeleOP extends AppCompatActivity {
     public static String YesFit = "False";
     public static String NoFit = "False";
 
+    public static String Level1 = "False";
+
 
 
 
@@ -25,15 +27,17 @@ public class data_collection_TeleOP extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection__tele_op);
 
         //Defines all Buttons;
-        final Button shallowB = (Button) findViewById(R.id.endHangShallow_B);
+        final Button shallowB = (Button) findViewById(R.id.EndL3_B);
         shallowB.setTag("D7D7D7D5");
 
-        final Button deepB = (Button) findViewById(R.id.endHangDeep_B);
+        final Button deepB = (Button) findViewById(R.id.EndL2_B);
         deepB.setTag("D7D7D7D5");
 
+        final Button levelL1B = (Button) findViewById(R.id.EndL1_B);
+        levelL1B.setTag("D7D7D7D5");
+
         //Defines all RadioButtons
-        final RadioButton YesFitRB = (RadioButton) findViewById(R.id.fitYes_RB);
-        final RadioButton NoFitRB = (RadioButton) findViewById(R.id.fitNo_RB);
+
 
         //Changes color of buttons and sets variable to true if clicked
         //Resets to default if clicked again
@@ -60,44 +64,54 @@ public class data_collection_TeleOP extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String colorCode = (String) deepB.getTag();
-                if (!"#FFE600".equals(colorCode)){
+                if (!"#FFE600".equals(colorCode)) {
                     deepB.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.colorPrimary));
                     deepB.setTag("#FFE600");
                     deep = "true";
 
 
-                }
-                else if("#FFE600".equals(colorCode)){
+                } else if ("#FFE600".equals(colorCode)) {
                     deepB.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.grey_button));
                     deepB.setTag("D7D7D7D5");
                     deep = "false";
                 }
 
-
             }
-
         });
+        levelL1B.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    String colorCode = (String) deepB.getTag();
+                    if (!"#FFE600".equals(colorCode)) {
+                        levelL1B.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.colorPrimary));
+                        levelL1B.setTag("#FFE600");
+                        Level1 = "true";
+                    } else if ("#FFE600".equals(colorCode)) {
+                        levelL1B.setBackgroundColor(ContextCompat.getColor(deepB.getContext(), R.color.grey_button));
+                        levelL1B.setTag("D7D7D7D5");
+                        Level1 = "false";
+                    }
+                }
+                });
 
         final Button To_EndGame = (Button) findViewById(R.id.To_Engame_B);
 
         //Creates OnClick Listener for next page button
-        To_EndGame.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-           public void onClick(View v) {
+            To_EndGame.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v) {
 
 
-                if (YesFitRB.isChecked()){
-                    YesFit = "True";
-                }
-                if (NoFitRB.isChecked()){
-                    NoFit = "True";
-                }
+
+
                     Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                     startActivity(startintent);
                 }
 
         });
 
-    }
-}
+    }};
+
+//    Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+//    startActivity(startintent);

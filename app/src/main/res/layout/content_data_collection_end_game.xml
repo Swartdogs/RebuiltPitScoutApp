@@ -28,11 +28,11 @@
         app:layout_constraintVertical_bias="0.041" />
 
     <TextView
-        android:id="@+id/end_HumanPlayerPreference_TB"
+        android:id="@+id/other_TrenchQuestion_TB"
         android:layout_width="674dp"
         android:layout_height="108dp"
         android:fontFamily="sans-serif"
-        android:text="Do you have a preference on where your human player is?"
+        android:text="Can you fit under the trenches?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="45sp"
@@ -56,29 +56,22 @@
         app:layout_constraintVertical_bias="0.487">
 
         <RadioButton
-            android:id="@+id/endHumanPlayerStation_RB"
+            android:id="@+id/other_TrenchQuestionYes_RB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Coral"
+            android:text="Yes"
             android:textSize="45sp" />
 
         <RadioButton
-            android:id="@+id/endHumanPlayerProcessor_RB"
+            android:id="@+id/other_TrenchQuestionNo_RB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Processor"
+            android:text="No"
             android:textSize="45sp"
             android:typeface="normal" />
 
-        <RadioButton
-            android:id="@+id/endHumanPlayerNone_RB"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="No Preference"
-            android:textSize="45sp" />
     </RadioGroup>
 
     <TextView
@@ -112,35 +105,28 @@
         app:layout_constraintVertical_bias="0.715">
 
         <RadioButton
-            android:id="@+id/endPreferenceAlgae_RB"
+            android:id="@+id/other_BumpQuestionYes_RB"
             android:layout_width="208dp"
             android:layout_height="match_parent"
-            android:text="Algae"
+            android:text="Yes"
             android:textSize="45sp" />
 
         <RadioButton
-            android:id="@+id/endPreferenceCoral_RB"
+            android:id="@+id/other_BumpQuestionNo_RB"
             android:layout_width="227dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Coral"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/endPreferenceNo_RB"
-            android:layout_width="339dp"
-            android:layout_height="81dp"
-            android:text="No Preference"
+            android:text="No"
             android:textSize="45sp" />
 
     </RadioGroup>
 
     <TextView
-        android:id="@+id/otherAlgaeSpecialist_TV"
+        android:id="@+id/other_BumpQuestion_TB"
         android:layout_width="757dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Do you focus on scoring Algae or Coral?"
+        android:text="Can you move over bumps?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="45sp"

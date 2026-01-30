@@ -38,18 +38,9 @@ public class Actual_Submit extends AppCompatActivity {
          Data_Collection_Page_1.GenAutoLeft + "," +
          Data_Collection_Page_1.GenAutoMiddle + "," +
                  Data_Collection_Page_1.GenAutoRight + "," +
-         data_Collection_sandstorm.CoralReefL1 + "," +
-         data_Collection_sandstorm.CoralReefL2 + "," +
-         data_Collection_sandstorm.CoralReefL3 + "," +
-         data_Collection_sandstorm.CoralReefL4 + "," +
-         data_Collection_sandstorm.CoralPickupGround + "," +
-         data_Collection_sandstorm.CoralPickupStation + "," +
-         data_Collection_sandstorm.AlgaePickupGround + "," +
-         data_Collection_sandstorm.AlgaePickupReef + "," +
-         data_Collection_sandstorm.AlgaePlaceProcessor + "," +
-         data_Collection_sandstorm.AlgaePlaceNet + "," +
-         data_Collection_sandstorm.AlgaeKnockYes + "," +
-         data_Collection_sandstorm.AlgaeKnockNo + "," +
+                 data_Collection_sandstorm.TeleopDepot + "," +
+                 data_Collection_sandstorm.TeleopOutpost + ',' +
+                 data_Collection_sandstorm.TeleopNeutralZone + ',' +
          data_collection_TeleOP.shallow + "," +
          data_collection_TeleOP.deep + "," +
          data_collection_TeleOP.YesFit + "," +
