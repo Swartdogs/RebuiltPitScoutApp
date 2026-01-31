@@ -29,6 +29,14 @@ public class Start_Page extends AppCompatActivity {
                         Data_Collection_Page_1.GenAutoRight = "False";
                         Data_Collection_Page_1.GenAutoMiddle = "False";
                         Data_Collection_Page_1.GenAutoLeft = "False";
+
+                        data_Collection_sandstorm.AutoHangYes = "False";
+                        data_Collection_sandstorm.AutoHangNo = "False";
+                        data_Collection_sandstorm.TeleopFuelCapacity = 0;
+                        data_Collection_sandstorm.TeleopDepot = "False";
+                        data_Collection_sandstorm.TeleopOutpost = "False";
+                        data_Collection_sandstorm.TeleopNeutralZone = "False";
+
                         data_collection_TeleOP.Level1 = "False";
                         data_collection_TeleOP.Level2 = "False";
                         data_collection_TeleOP.Level3 = "False";

@@ -16,7 +16,7 @@
         android:layout_marginBottom="2dp"
         android:fontFamily="@font/bolt_regular"
         android:gravity="center"
-        android:text="WELCOME TO 525 REEFSCAPE SCOUTING"
+        android:text="WELCOME TO 525 REBUILT SCOUTING"
         android:textColor="#000000"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/imageView"

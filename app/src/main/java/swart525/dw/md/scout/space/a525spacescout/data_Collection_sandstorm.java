@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class data_Collection_sandstorm extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class data_Collection_sandstorm extends AppCompatActivity {
     public static String TeleopDepot = "";
     public static String TeleopOutpost = "";
     public static String TeleopNeutralZone = "";
+    public static int TeleopFuelCapacity = 0;
+
 
 
     @Override
@@ -25,11 +28,10 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection_sandstorm);
 
-        //Defines all CheckBoxes for reef
-
+        //Defines all EditText boxes
+        final EditText TeleopFuelCapacityTXT = (EditText) findViewById(R.id.teleOpFuelCapacity_TXT);
 
         //Defines all Buttons for Coral pickup
-
         final Button TeleopDepotB = (Button) findViewById(R.id.teleopDepot_B);
         TeleopDepotB.setTag("#D7D7D7D5");
         final Button TeleopOutpostB = (Button) findViewById(R.id.teleopOutpost_B);
@@ -119,13 +121,24 @@ public class data_Collection_sandstorm extends AppCompatActivity {
                 if (AutoHangYesRB.isChecked()) {
                     AutoHangYes = "True";
                 }
+                else
+                    AutoHangYes = "False";
+
+
                 if (AutoHangNoRB.isChecked()) {
                     AutoHangNo = "True";
                 }
 
 
-                Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
-                startActivity(startintent);
+                if (TeleopFuelCapacityTXT.getText().toString().isEmpty()) {
+                    Toast.makeText(data_Collection_sandstorm.this, "Cannot Continue. Please Enter a Fuel Capacity!", Toast.LENGTH_LONG).show();
+                }
+                else {
+                    TeleopFuelCapacity = Integer.parseInt(TeleopFuelCapacityTXT.getText().toString());
+
+                    Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
+                    startActivity(startintent);
+                }
             }
         });
 
