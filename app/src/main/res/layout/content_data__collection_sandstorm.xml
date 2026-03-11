@@ -12,170 +12,137 @@
     tools:showIn="@layout/activity_data__collection_sandstorm">
 
 
-    <TextView
-        android:id="@+id/teleopAlgaePlace_TV"
-        android:layout_width="392dp"
-        android:layout_height="116dp"
-        android:fontFamily="sans-serif"
-        android:text="Can your robot hang on L1?"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
-
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:orientation="horizontal"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
+        android:rotation="75"
+        android:scaleX=".5"
+        android:translationZ="@dimen/cardview_default_radius"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintHorizontal_bias="0.602"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262">
+        app:layout_constraintVertical_bias="0.41"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
 
-        <RadioButton
-            android:id="@+id/autoHangYes_RB"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:text="Yes"
-            android:textSize="34sp" />
+    <Button
+        android:id="@+id/endL2_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="L2"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.515" />
 
-        <RadioButton
-            android:id="@+id/autoHangNo_RB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="No"
-            android:textSize="34sp" />
-    </RadioGroup>
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534"
+        app:srcCompat="@drawable/screenshotpng_removebg_preview" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="211dp"
+        android:layout_height="57dp"
+        android:rotation="110"
+        android:scaleX=".5"
+        android:translationZ="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.492"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
+
+    <Button
+        android:id="@+id/endL3_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="L3"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
 
     <TextView
-        android:id="@+id/teleopTeleOpTitle_TV"
+        android:id="@+id/teleEnd_Endgame_TV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bolt_regular"
-        android:text="TELEOP"
-        android:textColor="#000"
-        android:textSize="55sp"
+        android:text="ENDGAME"
+        android:textColor="#000000"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.441" />
+        app:layout_constraintVertical_bias="0.048" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="200dp"
+        android:layout_height="57dp"
+        android:clickable="false"
+        android:elevation="100dp"
+        android:rotation="120"
+        android:scaleX=".5"
+        android:translationZ="@dimen/cardview_default_radius"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.58"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569"
+        app:srcCompat="@drawable/pngimg_com___red_arrow_png68" />
 
     <TextView
-        android:id="@+id/teleopFuelPickup_TV"
-        android:layout_width="532dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/endHangLocation_TB"
+        android:layout_width="790dp"
+        android:layout_height="97dp"
         android:fontFamily="sans-serif"
-        android:text="Where can you pick up fuel?"
+        android:text="Can you Hang? If so, where?"
         android:textAlignment="center"
         android:textColor="#000000"
-        android:textSize="40sp"
+        android:textSize="45sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.664" />
+        app:layout_constraintVertical_bias="0.136" />
 
     <Button
-        android:id="@+id/teleopNeutralZone_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:text="Neutral Zone"
-        android:textSize="23sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
-
-    <Button
-        android:id="@+id/teleopOutpost_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:text="Outpost"
-        android:textAlignment="center"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
-
-    <Button
-        android:id="@+id/teleopDepot_B"
-        android:layout_width="160dp"
-        android:layout_height="80dp"
-        android:text="Depot"
-        android:textSize="27sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.737" />
-
-    <EditText
-        android:id="@+id/teleOpFuelCapacity_TXT"
-        android:layout_width="203dp"
-        android:layout_height="79dp"
-        android:editable="true"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="40sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.653"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
-
-    <TextView
-        android:id="@+id/teleopAlgaePickup_TV2"
-        android:layout_width="575dp"
-        android:layout_height="102dp"
-        android:fontFamily="sans-serif"
-        android:text="What is your robots average fuel capacity?"
-        android:textAlignment="textStart"
-        android:textColor="#000000"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.555" />
-
-    <TextView
-        android:id="@+id/teleopTeleOpTitle_TV2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/endL1_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="AUTO"
-        android:textColor="#000"
-        android:textSize="55sp"
+        android:text="L1"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.62" />
 
     <Button
         android:id="@+id/To_EndGame_B"
@@ -232,20 +199,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="top" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="268dp"
-        android:layout_height="377dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginTop="141dp"
-        android:layout_marginEnd="465dp"
-        android:layout_marginBottom="762dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screenshotpng_removebg_preview" />
 
 
 </android.support.constraint.ConstraintLayout>

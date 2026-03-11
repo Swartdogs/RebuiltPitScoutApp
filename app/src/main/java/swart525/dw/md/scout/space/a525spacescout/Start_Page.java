@@ -26,29 +26,26 @@ public class Start_Page extends AppCompatActivity {
                         Data_Collection_Page_1.GenAutoDepot = "False";
                         Data_Collection_Page_1.GenAutoOutpost = "False";
                         Data_Collection_Page_1.GenAutoNeutral = "False";
-                        Data_Collection_Page_1.GenAutoRight = "False";
-                        Data_Collection_Page_1.GenAutoMiddle = "False";
-                        Data_Collection_Page_1.GenAutoLeft = "False";
+                        Data_Collection_Page_1.GenAutoYes = "False";
+                        Data_Collection_Page_1.GenAutoNo = "False";
 
-                        data_Collection_sandstorm.AutoHangYes = "False";
-                        data_Collection_sandstorm.AutoHangNo = "False";
-                        data_Collection_sandstorm.TeleopFuelCapacity = 0;
-                        data_Collection_sandstorm.TeleopDepot = "False";
-                        data_Collection_sandstorm.TeleopOutpost = "False";
-                        data_Collection_sandstorm.TeleopNeutralZone = "False";
+                        data_Collection_sandstorm.Level1 = "False";
+                        data_Collection_sandstorm.Level2 = "False";
+                        data_Collection_sandstorm.Level3 = "False";
 
-                        data_collection_TeleOP.Level1 = "False";
-                        data_collection_TeleOP.Level2 = "False";
-                        data_collection_TeleOP.Level3 = "False";
-                        data_collection_end_game.EndTrenchYes = "False";
-                        data_collection_end_game.EndTrenchNo = "False";
-                        data_collection_end_game.EndBumpYes = "False";
-                        data_collection_end_game.EndBumpNo = "False";
-                        data_collection_end_game.EndSwerve = "False";
-                        data_collection_end_game.EndTank = "False";
-                        data_collection_end_game.EndOther = "False";
-                        data_collection_end_game.EndOtherText = "NA";
+                        data_collection_TeleOP.EndSwerve = "False";
+                        data_collection_TeleOP.EndTank = "False";
+                        data_collection_TeleOP.EndOther = "False";
+                        data_collection_TeleOP.EndOtherText = "NA";
+                        data_collection_TeleOP.EndWeight = 0;
+                        data_collection_TeleOP.EndTrench = "False";
+                        data_collection_TeleOP.EndBump = "False";
 
+                        data_collection_end_game.EndFuelShot = 0;
+                        data_collection_end_game.EndTurretNo = "False";
+                        data_collection_end_game.EndTurretYes = "False";
+                        data_collection_end_game.EndMoveNo = "False";
+                        data_collection_end_game.EndMoveYes = "False";
 
 
                 Intent startintent = new Intent(Start_Page.this, Data_Collection_Page_1.class);

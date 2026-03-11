@@ -17,7 +17,7 @@
         android:layout_width="266dp"
         android:layout_height="60dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="OTHER"
+        android:text="ROBOT"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="55sp"
@@ -26,22 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.041" />
-
-    <TextView
-        android:id="@+id/other_TrenchQuestion_TB"
-        android:layout_width="674dp"
-        android:layout_height="98dp"
-        android:fontFamily="sans-serif"
-        android:text="Can you fit under the trenches?"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="45sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395" />
 
     <RadioGroup
         android:id="@+id/radioGroup3"
@@ -53,10 +37,10 @@
         app:layout_constraintHorizontal_bias="0.73"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.483">
+        app:layout_constraintVertical_bias="0.406">
 
         <RadioButton
-            android:id="@+id/other_TrenchQuestionYes_RB"
+            android:id="@+id/other_TurretQuestionYes_RB"
             android:layout_width="15dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -64,7 +48,7 @@
             android:textSize="45sp" />
 
         <RadioButton
-            android:id="@+id/other_TrenchQuestionNo_RB"
+            android:id="@+id/other_TurretQuestionNo_RB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -75,11 +59,11 @@
     </RadioGroup>
 
     <TextView
-        android:id="@+id/end_driveBase_TB"
-        android:layout_width="600dp"
-        android:layout_height="109dp"
+        android:id="@+id/other_TrenchQuestion_TB"
+        android:layout_width="674dp"
+        android:layout_height="98dp"
         android:fontFamily="sans-serif"
-        android:text="What type of Drive Base do you use?"
+        android:text="Do you have a turret?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="45sp"
@@ -88,24 +72,58 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.146" />
+        app:layout_constraintVertical_bias="0.318" />
+
+    <EditText
+        android:id="@+id/end_otherText_TB"
+        android:layout_width="203dp"
+        android:layout_height="79dp"
+        android:editable="true"
+        android:ems="10"
+        android:inputType="number"
+        android:text="1, 2, 3..."
+        android:textSize="40sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.892"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:id="@+id/end_driveBase_TB"
+        android:layout_width="515dp"
+        android:layout_height="106dp"
+        android:fontFamily="sans-serif"
+        android:text="How many fuel do you shoot in one shot:"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167" />
 
     <TextView
         android:id="@+id/other_BumpQuestion_TB"
         android:layout_width="757dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="Can you move over bumps?"
+        android:text="Do you shoot while moving?"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="45sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.372"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.581" />
+        app:layout_constraintVertical_bias="0.514" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -116,20 +134,20 @@
         android:scrollbarAlwaysDrawVerticalTrack="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintHorizontal_bias="0.7"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.685">
+        app:layout_constraintVertical_bias="0.616">
 
         <RadioButton
-            android:id="@+id/other_BumpQuestionYes_RB"
+            android:id="@+id/other_ShootQuestionYes_RB"
             android:layout_width="266dp"
             android:layout_height="wrap_content"
             android:text="Yes"
             android:textSize="45sp" />
 
         <RadioButton
-            android:id="@+id/other_BumpQuestionNo_RB"
+            android:id="@+id/other_ShootQuestionNo_RB"
             android:layout_width="215dp"
             android:layout_height="80dp"
             android:layout_weight="1"
@@ -153,56 +171,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.906" />
-
-    <RadioGroup
-        android:layout_width="578dp"
-        android:layout_height="90dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271">
-
-        <RadioButton
-            android:id="@+id/end_Swerve_RB"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:text="Swerve"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/end_Tank_RB"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:text="Tank"
-            android:textSize="45sp" />
-
-        <RadioButton
-            android:id="@+id/end_OtherBase_RB"
-            android:layout_width="174dp"
-            android:layout_height="match_parent"
-            android:text="Other:"
-            android:textSize="45sp" />
-    </RadioGroup>
-
-    <EditText
-        android:id="@+id/end_otherText_TB"
-        android:layout_width="203dp"
-        android:layout_height="79dp"
-        android:editable="true"
-        android:ems="10"
-        android:inputType="text"
-        android:textSize="40sp"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
 
 
 </android.support.constraint.ConstraintLayout>

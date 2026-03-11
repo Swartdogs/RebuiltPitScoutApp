@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 
@@ -15,13 +16,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
 
     //Defines variables for data collection
     public static int GenTeamNum = 0;
-    public static int GenAutoCodes = 20;
+    public static int GenAutoCodes = 0;
     public static String GenAutoDepot = "False";
     public static String GenAutoNeutral = "False";
     public static String GenAutoOutpost = "False";
-    public static String GenAutoLeft = "False";
-    public static String GenAutoMiddle = "False";
-    public static String GenAutoRight = "False";
+    public static String GenAutoYes = "False";
+    public static String GenAutoNo = "False";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,78 +30,77 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         setContentView(R.layout.activity_data__collection__page_1);
 
         //Sets up comparison number
-        final int CompareTeamNum = 1; //Team must be greater than 1
+        final int CompareTeamNum = 0; //Team must be greater than 1
 
         //Defines all EditText boxes
         final EditText GenTeamNumTXT = (EditText) findViewById(R.id.genTeamNum_TXT);
         final EditText GenAutoCodesTXT = (EditText) findViewById(R.id.genAutoCodes_TXT);
 
-        //Defines all CheckBoxes
-        final CheckBox GenAutoDepotCB = (CheckBox) findViewById(R.id.genPickupDepot_CB);
-        final CheckBox GenAutoNeutralCB = (CheckBox) findViewById(R.id.genPickupNeutral_CB);
-        final CheckBox GenAutoOutpostCB = (CheckBox) findViewById(R.id.genPickupOutpost_CB);
-
         //Defines all Buttons
-        final Button GenAutoLeftB = (Button) findViewById(R.id.genStartLeft_B);
-        GenAutoLeftB.setTag("D7D7D7D5");
+        final Button GenAutoDepotB = (Button) findViewById(R.id.genPickupDepot_B);
+        GenAutoDepotB.setTag("D7D7D7D5");
 
-        final Button GenAutoMiddleB = (Button) findViewById(R.id.genStartMiddle_B);
-        GenAutoMiddleB.setTag("D7D7D7D5");
+        final Button GenAutoOutpostB = (Button) findViewById(R.id.genPickupOutpost_B);
+        GenAutoOutpostB.setTag("D7D7D7D5");
 
-        final Button GenAutoRightB = (Button) findViewById(R.id.genStartRight_B);
-        GenAutoRightB.setTag("D7D7D7D5");
+        final Button GenAutoNeutralB = (Button) findViewById(R.id.genPickupNeutralZone_B);
+        GenAutoNeutralB.setTag("D7D7D7D5");
 
-        GenAutoLeftB.setOnClickListener(new View.OnClickListener() {
+        //Defines all Radio Buttons
+        final RadioButton AutoHangYesRB = (RadioButton) findViewById(R.id.autoHangYes_RB);
+        final RadioButton AutoHangNoRB = (RadioButton) findViewById(R.id.autoHangNo_RB);
+
+        GenAutoDepotB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) GenAutoLeftB.getTag();
+                String colorCode = (String) GenAutoDepotB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    GenAutoLeftB.setBackgroundColor(ContextCompat.getColor(GenAutoLeftB.getContext(), R.color.colorPrimary));
-                    GenAutoLeftB.setTag("#FFE600");
-                    GenAutoLeft = "true";
+                    GenAutoDepotB.setBackgroundColor(ContextCompat.getColor(GenAutoDepotB.getContext(), R.color.colorPrimary));
+                    GenAutoDepotB.setTag("#FFE600");
+                    GenAutoDepot = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    GenAutoLeftB.setBackgroundColor(ContextCompat.getColor(GenAutoLeftB.getContext(), R.color.grey_button));
-                    GenAutoLeftB.setTag("D7D7D7D5");
-                    GenAutoLeft = "false";
+                    GenAutoDepotB.setBackgroundColor(ContextCompat.getColor(GenAutoDepotB.getContext(), R.color.grey_button));
+                    GenAutoDepotB.setTag("D7D7D7D5");
+                    GenAutoDepot = "false";
                 }
 
 
             }
 
         });
-        GenAutoMiddleB.setOnClickListener(new View.OnClickListener() {
+        GenAutoOutpostB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) GenAutoMiddleB.getTag();
+                String colorCode = (String) GenAutoOutpostB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    GenAutoMiddleB.setBackgroundColor(ContextCompat.getColor(GenAutoMiddleB.getContext(), R.color.colorPrimary));
-                    GenAutoMiddleB.setTag("#FFE600");
-                    GenAutoMiddle = "true";
+                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoOutpostB.getContext(), R.color.colorPrimary));
+                    GenAutoOutpostB.setTag("#FFE600");
+                    GenAutoOutpost = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    GenAutoMiddleB.setBackgroundColor(ContextCompat.getColor(GenAutoMiddleB.getContext(), R.color.grey_button));
-                    GenAutoMiddleB.setTag("D7D7D7D5");
-                    GenAutoMiddle = "false";
+                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoOutpostB.getContext(), R.color.grey_button));
+                    GenAutoOutpostB.setTag("D7D7D7D5");
+                    GenAutoOutpost = "false";
                 }
 
 
             }
 
         });
-        GenAutoRightB.setOnClickListener(new View.OnClickListener() {
+        GenAutoNeutralB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) GenAutoRightB.getTag();
+                String colorCode = (String) GenAutoNeutralB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    GenAutoRightB.setBackgroundColor(ContextCompat.getColor(GenAutoRightB.getContext(), R.color.colorPrimary));
-                    GenAutoRightB.setTag("#FFE600");
-                    GenAutoRight = "true";
+                    GenAutoNeutralB.setBackgroundColor(ContextCompat.getColor(GenAutoNeutralB.getContext(), R.color.colorPrimary));
+                    GenAutoNeutralB.setTag("#FFE600");
+                    GenAutoNeutral = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    GenAutoRightB.setBackgroundColor(ContextCompat.getColor(GenAutoRightB.getContext(), R.color.grey_button));
-                    GenAutoRightB.setTag("D7D7D7D5");
-                    GenAutoRight = "false";
+                    GenAutoNeutralB.setBackgroundColor(ContextCompat.getColor(GenAutoNeutralB.getContext(), R.color.grey_button));
+                    GenAutoNeutralB.setTag("D7D7D7D5");
+                    GenAutoNeutral = "false";
                 }
 
 
@@ -128,15 +128,13 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
             public void onClick(View v) {
 
                 //Sets variables to true if checked
-                if (GenAutoDepotCB.isChecked()) {
-                    GenAutoDepot= "True";
+                if (AutoHangYesRB.isChecked()) {
+                    GenAutoYes= "True";
                 }
-                if (GenAutoOutpostCB.isChecked()) {
-                    GenAutoOutpost = "True";
+                if (AutoHangNoRB.isChecked()) {
+                    GenAutoNo = "True";
                 }
-                if (GenAutoNeutralCB.isChecked()) {
-                    GenAutoNeutral = "True";
-                }
+
 
                 //Collect text inputs and ensures they are filled
                 if (GenTeamNumTXT.getText().toString().isEmpty() || GenAutoCodesTXT.getText().toString().isEmpty()) {

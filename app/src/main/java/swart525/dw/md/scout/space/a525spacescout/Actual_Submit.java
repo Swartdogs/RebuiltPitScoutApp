@@ -32,32 +32,29 @@ public class Actual_Submit extends AppCompatActivity {
     public String Final_String =
          Data_Collection_Page_1.GenTeamNum + "," +
          Data_Collection_Page_1.GenAutoCodes + "," +
-         Data_Collection_Page_1.GenAutoLeft + "," +
-         Data_Collection_Page_1.GenAutoMiddle + "," +
-         Data_Collection_Page_1.GenAutoRight + "," +
+         Data_Collection_Page_1.GenAutoYes + "," +
+         Data_Collection_Page_1.GenAutoNo + "," +
          Data_Collection_Page_1.GenAutoDepot + "," +
          Data_Collection_Page_1.GenAutoOutpost + "," +
          Data_Collection_Page_1.GenAutoNeutral + "," +
 
-         data_Collection_sandstorm.AutoHangYes + "," +
-         data_Collection_sandstorm.AutoHangNo + ',' +
-         data_Collection_sandstorm.TeleopFuelCapacity + ',' +
-         data_Collection_sandstorm.TeleopDepot + "," +
-         data_Collection_sandstorm.TeleopOutpost + ',' +
-         data_Collection_sandstorm.TeleopNeutralZone + ',' +
+         data_Collection_sandstorm.Level1 + "," +
+         data_Collection_sandstorm.Level2 + ',' +
+         data_Collection_sandstorm.Level3 + ',' +
 
-         data_collection_TeleOP.Level1 + "," +
-         data_collection_TeleOP.Level2 + "," +
-         data_collection_TeleOP.Level3 + "," +
+         data_collection_TeleOP.EndSwerve + "," +
+         data_collection_TeleOP.EndTank + "," +
+         data_collection_TeleOP.EndOther + "," +
+                 data_collection_TeleOP.EndOtherText + "," +
+                 data_collection_TeleOP.EndWeight + "," +
+                 data_collection_TeleOP.EndTrench + "," +
+                 data_collection_TeleOP.EndBump + "," +
 
-         data_collection_end_game.EndTrenchYes + "," +
-         data_collection_end_game.EndTrenchNo + "," +
-         data_collection_end_game.EndBumpYes + "," +
-         data_collection_end_game.EndBumpNo + "," +
-         data_collection_end_game.EndSwerve + "," +
-         data_collection_end_game.EndTank + "," +
-         data_collection_end_game.EndOther + "," +
-         data_collection_end_game.EndOtherText;
+         data_collection_end_game.EndFuelShot + "," +
+         data_collection_end_game.EndTurretNo + "," +
+         data_collection_end_game.EndTurretYes + "," +
+         data_collection_end_game.EndMoveNo + "," +
+         data_collection_end_game.EndMoveYes;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);

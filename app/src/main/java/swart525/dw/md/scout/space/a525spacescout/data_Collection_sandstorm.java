@@ -14,13 +14,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
 
     //Defines variables for data collection
 
-    public static String AutoHangYes = "False";
-    public static String AutoHangNo = "False";
-    public static String TeleopDepot = "";
-    public static String TeleopOutpost = "";
-    public static String TeleopNeutralZone = "";
-    public static int TeleopFuelCapacity = 0;
-
+    public static String Level3 = "False";
+    public static String Level2 = "False";
+    public static String Level1 = "False";
 
 
     @Override
@@ -28,85 +24,73 @@ public class data_Collection_sandstorm extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data__collection_sandstorm);
 
-        //Defines all EditText boxes
-        final EditText TeleopFuelCapacityTXT = (EditText) findViewById(R.id.teleOpFuelCapacity_TXT);
+        //Defines all Buttons;
+        final Button levelL3B = (Button) findViewById(R.id.endL3_B);
+        levelL3B.setTag("D7D7D7D5");
 
-        //Defines all Buttons for Coral pickup
-        final Button TeleopDepotB = (Button) findViewById(R.id.teleopDepot_B);
-        TeleopDepotB.setTag("#D7D7D7D5");
-        final Button TeleopOutpostB = (Button) findViewById(R.id.teleopOutpost_B);
-        TeleopOutpostB.setTag("D7D7D7D5");
-        final Button TeleopNeutralZoneB = (Button) findViewById(R.id.teleopNeutralZone_B);
-        TeleopNeutralZoneB.setTag("#D7D7D7D5");
+        final Button levelL2B = (Button) findViewById(R.id.endL2_B);
+        levelL2B.setTag("D7D7D7D5");
 
+        final Button levelL1B = (Button) findViewById(R.id.endL1_B);
+        levelL1B.setTag("D7D7D7D5");
 
-        final EditText EndOtherTextTXT = (EditText) findViewById(R.id.end_otherText_TB);
-        //Defines all RadioButtons for Algae
-        final RadioButton AutoHangYesRB = (RadioButton) findViewById(R.id.autoHangYes_RB);
-        final RadioButton AutoHangNoRB = (RadioButton) findViewById(R.id.autoHangNo_RB);
-
+        //Defines all RadioButtons
 
 
         //Changes color of buttons and sets variable to true if clicked
         //Resets to default if clicked again
-        TeleopDepotB.setOnClickListener(new View.OnClickListener() {
+        levelL3B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String colorCode = (String) TeleopDepotB.getTag();
+                String colorCode = (String) levelL3B.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    TeleopDepotB.setBackgroundColor(ContextCompat.getColor(TeleopDepotB.getContext(), R.color.colorPrimary));
-                    TeleopDepotB.setTag("#FFE600");
-                    TeleopDepot = "true";
+                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.colorPrimary));
+                    levelL3B.setTag("#FFE600");
+                    Level3 = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    TeleopDepotB.setBackgroundColor(ContextCompat.getColor(TeleopDepotB.getContext(), R.color.grey_button));
-                    TeleopDepotB.setTag("D7D7D7D5");
-                    TeleopDepot = "false";
+                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.grey_button));
+                    levelL3B.setTag("D7D7D7D5");
+                    Level3 = "false";
                 }
+
 
             }
 
         });
-        TeleopOutpostB.setOnClickListener(new View.OnClickListener() {
+        levelL2B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String colorCode = (String) levelL2B.getTag();
+                if (!"#FFE600".equals(colorCode)) {
+                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.colorPrimary));
+                    levelL2B.setTag("#FFE600");
+                    Level2 = "true";
 
-                String colorCode = (String) TeleopOutpostB.getTag();
-                if (!"#FFE600".equals(colorCode)){
-                    TeleopOutpostB.setBackgroundColor(ContextCompat.getColor(TeleopOutpostB.getContext(), R.color.colorPrimary));
-                    TeleopOutpostB.setTag("#FFE600");
-                    TeleopOutpost = "true";
-                }
-                else if("#FFE600".equals(colorCode)){
-                    TeleopOutpostB.setBackgroundColor(ContextCompat.getColor(TeleopOutpostB.getContext(), R.color.grey_button));
-                    TeleopOutpostB.setTag("D7D7D7D5");
-                    TeleopOutpost = "false";
+
+                } else if ("#FFE600".equals(colorCode)) {
+                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.grey_button));
+                    levelL2B.setTag("D7D7D7D5");
+                    Level2 = "false";
                 }
 
             }
-
         });
-        TeleopNeutralZoneB.setOnClickListener(new View.OnClickListener() {
+        levelL1B.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                String colorCode = (String) TeleopNeutralZoneB.getTag();
-                if (!"#FFE600".equals(colorCode)){
-                    TeleopNeutralZoneB.setBackgroundColor(ContextCompat.getColor(TeleopNeutralZoneB.getContext(), R.color.colorPrimary));
-                    TeleopNeutralZoneB.setTag("#FFE600");
-                    TeleopNeutralZone = "true";
+                String colorCode = (String) levelL1B.getTag();
+                if (!"#FFE600".equals(colorCode)) {
+                    levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.colorPrimary));
+                    levelL1B.setTag("#FFE600");
+                    Level1 = "true";
+                } else if ("#FFE600".equals(colorCode)) {
+                    levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.grey_button));
+                    levelL1B.setTag("D7D7D7D5");
+                    Level1 = "false";
                 }
-                else if("#FFE600".equals(colorCode)){
-                    TeleopNeutralZoneB.setBackgroundColor(ContextCompat.getColor(TeleopNeutralZoneB.getContext(), R.color.grey_button));
-                    TeleopNeutralZoneB.setTag("D7D7D7D5");
-                    TeleopNeutralZone = "false";
-                }
-
             }
-
         });
-
 
         //Defines Button to next page
         final Button To_EndGame_B = (Button) findViewById(R.id.To_EndGame_B);
@@ -117,28 +101,9 @@ public class data_Collection_sandstorm extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                //Sets variables to true if checked
-                if (AutoHangYesRB.isChecked()) {
-                    AutoHangYes = "True";
-                }
-                else
-                    AutoHangYes = "False";
-
-
-                if (AutoHangNoRB.isChecked()) {
-                    AutoHangNo = "True";
-                }
-
-
-                if (TeleopFuelCapacityTXT.getText().toString().isEmpty()) {
-                    Toast.makeText(data_Collection_sandstorm.this, "Cannot Continue. Please Enter a Fuel Capacity!", Toast.LENGTH_LONG).show();
-                }
-                else {
-                    TeleopFuelCapacity = Integer.parseInt(TeleopFuelCapacityTXT.getText().toString());
-
                     Intent startintent = new Intent(getApplicationContext(), data_collection_TeleOP.class);
                     startActivity(startintent);
-                }
+
             }
         });
 

@@ -6,19 +6,21 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.Toast;
 
 public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
-    public static String Level3 = "False";
-    public static String Level2 = "False";
-    public static String YesFit = "False";
-    public static String NoFit = "False";
+    public static String EndSwerve = "False";
+    public static String EndTank = "False";
+    public static String EndOther = "False";
+    public static String EndOtherText = "NA";
 
-    public static String Level1 = "False";
-
-
+    public static int EndWeight = 0;
+    public static String EndTrench = "False";
+    public static String EndBump = "False";
 
 
     @Override
@@ -26,87 +28,84 @@ public class data_collection_TeleOP extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collection__tele_op);
 
-        //Defines all Buttons;
-        final Button levelL3B = (Button) findViewById(R.id.EndL3_B);
-        levelL3B.setTag("D7D7D7D5");
+        final RadioButton EndSwerveRB = (RadioButton) findViewById(R.id.end_Swerve_RB);
+        final RadioButton EndTankRB = (RadioButton) findViewById(R.id.end_Tank_RB);
+        final RadioButton EndOtherRB = (RadioButton) findViewById(R.id.end_OtherBase_RB);
 
-        final Button levelL2B = (Button) findViewById(R.id.EndL2_B);
-        levelL2B.setTag("D7D7D7D5");
-
-        final Button levelL1B = (Button) findViewById(R.id.EndL1_B);
-        levelL1B.setTag("D7D7D7D5");
-
-        //Defines all RadioButtons
+        final EditText EndOtherTextTXT = (EditText) findViewById(R.id.end_otherText_TB);
+        final EditText EndWeightTXT = (EditText) findViewById(R.id.robot_weight_TB);
 
 
-        //Changes color of buttons and sets variable to true if clicked
-        //Resets to default if clicked again
-        levelL3B.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String colorCode = (String) levelL3B.getTag();
-                if (!"#FFE600".equals(colorCode)){
-                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.colorPrimary));
-                    levelL3B.setTag("#FFE600");
-                    Level3 = "true";
-                }
-                else if("#FFE600".equals(colorCode)){
-                    levelL3B.setBackgroundColor(ContextCompat.getColor(levelL3B.getContext(), R.color.grey_button));
-                    levelL3B.setTag("D7D7D7D5");
-                    Level3 = "false";
-                }
+        final Button EndTrenchB = (Button) findViewById(R.id.end_Trench_B);
+        final Button EndBumpB = (Button) findViewById(R.id.end_Bump_B);
 
-
-            }
-
-        });
-        levelL2B.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String colorCode = (String) levelL2B.getTag();
-                if (!"#FFE600".equals(colorCode)) {
-                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.colorPrimary));
-                    levelL2B.setTag("#FFE600");
-                    Level2 = "true";
-
-
-                } else if ("#FFE600".equals(colorCode)) {
-                    levelL2B.setBackgroundColor(ContextCompat.getColor(levelL2B.getContext(), R.color.grey_button));
-                    levelL2B.setTag("D7D7D7D5");
-                    Level2 = "false";
-                }
-
-            }
-        });
-        levelL1B.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    String colorCode = (String) levelL1B.getTag();
-                    if (!"#FFE600".equals(colorCode)) {
-                        levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.colorPrimary));
-                        levelL1B.setTag("#FFE600");
-                        Level1 = "true";
-                    } else if ("#FFE600".equals(colorCode)) {
-                        levelL1B.setBackgroundColor(ContextCompat.getColor(levelL1B.getContext(), R.color.grey_button));
-                        levelL1B.setTag("D7D7D7D5");
-                        Level1 = "false";
-                    }
-                }
-                });
 
         final Button To_EndGame = (Button) findViewById(R.id.To_Engame_B);
+
+        EndTrenchB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) EndTrenchB.getTag();
+                if (!"#FFE600".equals(colorCode)) {
+                    EndTrenchB.setBackgroundColor(ContextCompat.getColor(EndTrenchB.getContext(), R.color.colorPrimary));
+                    EndTrenchB.setTag("#FFE600");
+                    EndTrench = "true";
+                } else if ("#FFE600".equals(colorCode)) {
+                    EndTrenchB.setBackgroundColor(ContextCompat.getColor(EndTrenchB.getContext(), R.color.grey_button));
+                    EndTrenchB.setTag("D7D7D7D5");
+                    EndTrench = "false";
+                }
+            }
+        });
+
+        EndBumpB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String colorCode = (String) EndBumpB.getTag();
+                if (!"#FFE600".equals(colorCode)) {
+                    EndBumpB.setBackgroundColor(ContextCompat.getColor(EndBumpB.getContext(), R.color.colorPrimary));
+                    EndBumpB.setTag("#FFE600");
+                    EndBump = "true";
+                } else if ("#FFE600".equals(colorCode)) {
+                    EndBumpB.setBackgroundColor(ContextCompat.getColor(EndBumpB.getContext(), R.color.grey_button));
+                    EndBumpB.setTag("D7D7D7D5");
+                    EndBump = "false";
+                }
+            }
+        });
 
         //Creates OnClick Listener for next page button
             To_EndGame.setOnClickListener(new View.OnClickListener()
             {
                 @Override
                 public void onClick(View v) {
+                    EndWeight = Integer.parseInt(EndWeightTXT.getText().toString());
 
+                    if (EndSwerveRB.isChecked()){
+                        EndSwerve = "True";
+                    }
+                    if (EndTankRB.isChecked()) {
+                        EndTank = "True";
+                    }
 
-
-
-                    Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-                    startActivity(startintent);
+                    if (EndOtherRB.isChecked()) {
+                        EndOther = "True";
+                        if (EndOtherTextTXT.getText().toString().isEmpty()) {
+                            Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter drive base type!", Toast.LENGTH_LONG).show();
+                        }
+                        else {
+                            EndOtherText = (EndOtherTextTXT.getText().toString());
+                            Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+                            startActivity(startintent);
+                        }
+                    }
+                    else if (EndSwerve.equals("True") || EndTank.equals("True")){
+                        Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+                        startActivity(startintent);
+                    }
+                    else {
+                        Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Select Drive Base Type!", Toast.LENGTH_LONG).show();
+                    }
                 }
 
         });

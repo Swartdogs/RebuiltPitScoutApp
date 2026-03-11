@@ -8,46 +8,104 @@
     tools:context=".Data_Collection_Page_1">
 
 
-    <Button
-        android:id="@+id/genStartLeft_B"
-        android:layout_width="211dp"
-        android:layout_height="76dp"
-        android:fontFamily="@font/bolt_regular"
-        android:text="LEFT"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <TextView
+        android:id="@+id/teleopAlgaePlace_TV2"
+        android:layout_width="392dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="684dp"
+        android:fontFamily="sans-serif"
+        android:text="Can your robot hang on L1?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/To_EndGame_B"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintHorizontal_bias="0.899"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.146" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683">
+
+        <RadioButton
+            android:id="@+id/autoHangYes_RB"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textSize="34sp" />
+
+        <RadioButton
+            android:id="@+id/autoHangNo_RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textSize="34sp" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="268dp"
+        android:layout_height="377dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.716"
+        app:srcCompat="@drawable/screenshotpng_removebg_preview" />
 
     <Button
-        android:id="@+id/genStartMiddle_B"
-        android:layout_width="211dp"
-        android:layout_height="76dp"
+        android:id="@+id/genPickupNeutralZone_B"
+        android:layout_width="262dp"
+        android:layout_height="80dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="MIDDLe"
+        android:text="NEUTRAL ZONE"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.39" />
 
     <Button
-        android:id="@+id/genStartRight_B"
+        android:id="@+id/genPickupDepot_B"
         android:layout_width="211dp"
         android:layout_height="76dp"
         android:fontFamily="@font/bolt_regular"
-        android:text="RIGHT"
+        android:text="DEPOT"
         android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.39" />
+
+    <Button
+        android:id="@+id/genPickupOutpost_B"
+        android:layout_width="211dp"
+        android:layout_height="76dp"
+        android:fontFamily="@font/bolt_regular"
+        android:text="OUTPOST"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.391" />
 
     <TextView
         android:id="@+id/genQuestions_TV"
@@ -78,36 +136,6 @@
 
 
     <TextView
-        android:id="@+id/genStart_TV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:fontFamily="sans-serif"
-        android:foregroundGravity="center_horizontal"
-        android:text="Where do you start in Auto?"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="41sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.296" />
-
-    <ImageView
-        android:id="@+id/genReefImage_IV"
-        android:layout_width="1160dp"
-        android:layout_height="443dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.511"
-        app:srcCompat="@drawable/untitled_presentation_removebg_preview" />
-
-    <TextView
         android:id="@+id/genAutoPickup_TV"
         android:layout_width="600dp"
         android:layout_height="101dp"
@@ -121,10 +149,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.71" />
+        app:layout_constraintVertical_bias="0.298" />
 
     <Button
         android:id="@+id/genNextPage_B"
@@ -245,45 +273,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.184" />
-
-    <CheckBox
-        android:id="@+id/genPickupOutpost_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Outpost"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.404"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <CheckBox
-        android:id="@+id/genPickupDepot_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Depot"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.077"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
-
-    <CheckBox
-        android:id="@+id/genPickupNeutral_CB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Neutral Zone"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.802" />
 
 
 </android.support.constraint.ConstraintLayout>
