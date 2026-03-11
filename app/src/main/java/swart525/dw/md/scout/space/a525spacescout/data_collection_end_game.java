@@ -24,8 +24,6 @@ public class data_collection_end_game extends AppCompatActivity {
         setContentView(R.layout.activity_data_collection_end_game);
 
         //Defines Page Elements
-
-
         final RadioButton EndTurretNoRB = (RadioButton) findViewById(R.id.other_TurretQuestionNo_RB);
         final RadioButton EndTurretYesRB = (RadioButton) findViewById(R.id.other_TurretQuestionYes_RB);
         final RadioButton EndMoveYesRB = (RadioButton) findViewById(R.id.other_ShootQuestionYes_RB);

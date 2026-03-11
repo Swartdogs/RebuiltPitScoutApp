@@ -32,7 +32,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
         final RadioButton EndTankRB = (RadioButton) findViewById(R.id.end_Tank_RB);
         final RadioButton EndOtherRB = (RadioButton) findViewById(R.id.end_OtherBase_RB);
 
-        final EditText EndOtherTextTXT = (EditText) findViewById(R.id.end_otherText_TB);
+        final EditText EndOtherTextTXT = (EditText) findViewById(R.id.robot_Other_TB);
         final EditText EndWeightTXT = (EditText) findViewById(R.id.robot_weight_TB);
 
 
@@ -79,32 +79,37 @@ public class data_collection_TeleOP extends AppCompatActivity {
             {
                 @Override
                 public void onClick(View v) {
-                    EndWeight = Integer.parseInt(EndWeightTXT.getText().toString());
+                    if (EndWeightTXT.getText().toString().isEmpty()) {
+                        Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter robot weight!", Toast.LENGTH_LONG).show();
+                    } else {
+                        EndWeight = Integer.parseInt(EndWeightTXT.getText().toString());
 
-                    if (EndSwerveRB.isChecked()){
-                        EndSwerve = "True";
-                    }
-                    if (EndTankRB.isChecked()) {
-                        EndTank = "True";
-                    }
 
-                    if (EndOtherRB.isChecked()) {
-                        EndOther = "True";
-                        if (EndOtherTextTXT.getText().toString().isEmpty()) {
-                            Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter drive base type!", Toast.LENGTH_LONG).show();
+                        if (EndSwerveRB.isChecked()) {
+                            EndSwerve = "True";
                         }
-                        else {
-                            EndOtherText = (EndOtherTextTXT.getText().toString());
+                        if (EndTankRB.isChecked()) {
+                            EndTank = "True";
+                        }
+
+                        if (EndOtherRB.isChecked()) {
+                            EndOther = "True";
+                            if (EndOtherTextTXT.getText().toString().isEmpty()) {
+                                Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter drive base type!", Toast.LENGTH_LONG).show();
+                            }
+                            else {
+                                EndOtherText = (EndOtherTextTXT.getText().toString());
+                                Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
+                                startActivity(startintent);
+                            }
+                        }
+                        else if (EndSwerve.equals("True") || EndTank.equals("True")){
                             Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                             startActivity(startintent);
                         }
-                    }
-                    else if (EndSwerve.equals("True") || EndTank.equals("True")){
-                        Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
-                        startActivity(startintent);
-                    }
-                    else {
-                        Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Select Drive Base Type!", Toast.LENGTH_LONG).show();
+                        else {
+                            Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Select Drive Base Type!", Toast.LENGTH_LONG).show();
+                        }
                     }
                 }
 
