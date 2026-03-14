@@ -10,6 +10,8 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class data_collection_TeleOP extends AppCompatActivity {
 
     //Defines variables for data collection
@@ -79,7 +81,10 @@ public class data_collection_TeleOP extends AppCompatActivity {
             {
                 @Override
                 public void onClick(View v) {
-                    if (EndWeightTXT.getText().toString().isEmpty()) {
+                    if (!(Objects.equals(EndTrench, "true") || Objects.equals(EndBump, "true"))){
+                        Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter Trench or Bump!", Toast.LENGTH_LONG).show();
+                    }
+                    else if (EndWeightTXT.getText().toString().isEmpty()) {
                         Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter robot weight!", Toast.LENGTH_LONG).show();
                     } else {
                         EndWeight = Integer.parseInt(EndWeightTXT.getText().toString());
@@ -98,7 +103,7 @@ public class data_collection_TeleOP extends AppCompatActivity {
                                 Toast.makeText(data_collection_TeleOP.this, "Cannot Continue. Please Enter drive base type!", Toast.LENGTH_LONG).show();
                             }
                             else {
-                                EndOtherText = (EndOtherTextTXT.getText().toString());
+                                EndOtherText = EndOtherTextTXT.getText().toString();
                                 Intent startintent = new Intent(getApplicationContext(), data_collection_end_game.class);
                                 startActivity(startintent);
                             }
