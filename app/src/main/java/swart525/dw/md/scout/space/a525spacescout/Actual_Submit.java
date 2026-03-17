@@ -32,11 +32,11 @@ public class Actual_Submit extends AppCompatActivity {
     public String Final_String =
          Data_Collection_Page_1.GenTeamNum + "," +
          Data_Collection_Page_1.GenAutoCodes + "," +
-         Data_Collection_Page_1.GenAutoYes + "," +
-         Data_Collection_Page_1.GenAutoNo + "," +
          Data_Collection_Page_1.GenAutoDepot + "," +
          Data_Collection_Page_1.GenAutoOutpost + "," +
          Data_Collection_Page_1.GenAutoNeutral + "," +
+                 Data_Collection_Page_1.GenAutoYes + "," +
+                 Data_Collection_Page_1.GenAutoNo + "," +
 
          data_Collection_sandstorm.Level1 + "," +
          data_Collection_sandstorm.Level2 + ',' +
@@ -51,10 +51,10 @@ public class Actual_Submit extends AppCompatActivity {
                  data_collection_TeleOP.EndBump + "," +
 
          data_collection_end_game.EndFuelShot + "," +
-         data_collection_end_game.EndTurretNo + "," +
          data_collection_end_game.EndTurretYes + "," +
-         data_collection_end_game.EndMoveNo + "," +
-         data_collection_end_game.EndMoveYes;
+         data_collection_end_game.EndTurretNo + "," +
+         data_collection_end_game.EndMoveYes + "," +
+         data_collection_end_game.EndMoveNo;
 
     File externalStorageDir = Environment.getExternalStorageDirectory();
     public File Scout_Data = new File(externalStorageDir , "/DCIM/" + fileName);

@@ -72,14 +72,14 @@ public class Data_Collection_Page_1 extends AppCompatActivity {
         GenAutoOutpostB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String colorCode = (String) GenAutoOutpostB.getTag();
+                String colorCode = (String) GenAutoDepotB.getTag();
                 if (!"#FFE600".equals(colorCode)){
-                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoOutpostB.getContext(), R.color.colorPrimary));
+                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoDepotB.getContext(), R.color.colorPrimary));
                     GenAutoOutpostB.setTag("#FFE600");
                     GenAutoOutpost = "true";
                 }
                 else if("#FFE600".equals(colorCode)){
-                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoOutpostB.getContext(), R.color.grey_button));
+                    GenAutoOutpostB.setBackgroundColor(ContextCompat.getColor(GenAutoDepotB.getContext(), R.color.grey_button));
                     GenAutoOutpostB.setTag("D7D7D7D5");
                     GenAutoOutpost = "false";
                 }
